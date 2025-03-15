@@ -74,6 +74,35 @@ func main() {
 - github.com/rs/zerolog - Логирование
 - github.com/streadway/amqp - Работа с RabbitMQ
 
+## Тестирование
+
+Проект содержит тесты для всех пакетов. Для запуска тестов используйте команды из Makefile:
+
+```bash
+# Запуск всех тестов
+make test
+
+# Запуск тестов с подробным выводом
+make test-verbose
+
+# Запуск тестов с покрытием кода
+make test-coverage
+```
+
+## Makefile
+
+Проект содержит Makefile со следующими командами:
+
+```bash
+make                 # Показать справку (выполняется по умолчанию)
+make help            # Показать справку
+make test            # Запуск тестов
+make test-verbose    # Запуск тестов с подробным выводом
+make test-coverage   # Запуск тестов с покрытием кода
+make build           # Сборка проекта
+make clean           # Очистка временных файлов
+```
+
 ## Лицензия
 
 MIT
